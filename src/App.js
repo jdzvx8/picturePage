@@ -4,7 +4,8 @@ import Lightbox from 'react-image-lightbox'
 import './App.css';
 import 'react-image-lightbox/style.css'
 
-const images = []
+const images = ['https://cdn.cnn.com/cnnnext/dam/assets/170407220916-04-iconic-mountains-matterhorn-restricted.jpg',
+'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Nanga_Parbat_The_Killer_Mountain.jpg/250px-Nanga_Parbat_The_Killer_Mountain.jpg']
 
 class App extends Component {
   constructor(props) {
@@ -16,6 +17,8 @@ class App extends Component {
   }
 
   render() {
+    let { photoIndex } = this.state
+    console.log('test', photoIndex)
     return (
       <div className="App">
         <header className="App-header">
